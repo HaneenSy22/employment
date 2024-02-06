@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>استمارة توظيف</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="position">المنصب المتقدم له:</label>
+        <select id="position" name="position">
+            <option value="developer">مطور برامج</option>
+            <option value="designer">مصمم جرافيك</option>
+            <option value="manager">مدير مشروع</option>
+        </select>
+
+        <input type="submit" value="إرسال">
+    </form>
+</body>
+</html>
